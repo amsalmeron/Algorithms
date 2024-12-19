@@ -39,3 +39,32 @@ Give the runtime for the following scenarios in Big O notation
     For searching it would be slower than an array, and inserting it would be slightly faster or the same as a linked list. 
 
 ## Chapter 3 Recursion
+
+3.1 How to define the stack (bottom to top): 
+    greet2(name)
+    name = maggie
+    greet(name)
+    name = maggie
+
+    Greet function is called with name = maggie, but is suspended because 
+    greet2 fucntion is called withi greet function with the same variable 
+    name = maggie
+
+3.2 What happens to the stack when a recursive function runs forever?
+    The stack continues to grow until the program errors out due to a stack overflow
+
+## Chapter 4 Quicksort
+
+4.1 Write out the sum function:
+    def sum(a,b):
+        return a + b
+
+4.2 Write a recursive function to count the number of items on a list
+    def count_items(list, count):
+        count = 0
+        if (list.pop())
+            count + 1
+            count = count_items(list.pop, count)
+        return count
+        
+4.3 Find the maximum number in a list
